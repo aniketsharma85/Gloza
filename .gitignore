@@ -1,0 +1,6 @@
+# GLOZA Git Ignore
+.gemini/
+extracted_project/
+*.log
+.DS_Store
+Thumbs.db

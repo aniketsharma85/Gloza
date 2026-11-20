@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GLOZA // Curated Luxury Sneaker Reselling Vault</title>
+  <meta name="description" content="GLOZA is the premier modern marketplace for authenticated deadstock sneaker grails, Nike SB Dunks, and rare streetwear collector editions.">
+  <link rel="icon" type="image/jpeg" href="assets/gloza-logo.jpg">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <header class="gloza-navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-brand">
+        <div class="brand-badge">
+          <img src="assets/gloza-logo.jpg" alt="GLOZA">
+        </div>
+        <span class="brand-title">GLOZA</span>
+        <span class="brand-edition-tag">VAULT</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#vault" class="nav-link active">The Vault</a></li>
+          <li><a href="#studio" class="nav-link">360° Studio</a></li>
+          <li><a href="#anatomy" class="nav-link">Craftsmanship</a></li>
+          <li><a href="#manifesto" class="nav-link">The Difference</a></li>
+          <li><a href="#consign" class="nav-link">Sell / Consign</a></li>
+          <li><a href="#verifier" class="nav-link">NFC Verify</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="nav-status-badge">
+          <span class="nav-status-dot"></span>
+          <span>100% VERIFIED</span>
+        </div>
+
+        <!-- Audio Synthesizer Toggle -->
+        <button id="sound-toggle-btn" class="sound-toggle-btn" aria-label="Toggle Audio Feedback">
+          <div class="sound-waves">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <span class="sound-btn-text">AUDIO</span>
+        </button>
+
+        <!-- Cart Trigger Button -->
+        <button id="cart-trigger-btn" class="cart-trigger-btn" aria-label="Open Shopping Bag">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span>BAG</span>
+          <span id="cart-badge-count" class="cart-count">1</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Open Navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       ANNOUNCEMENT TICKER
+       ========================================================================== -->
+  <div class="announcement-bar">
+    <div class="ticker-track">
+      <div class="ticker-item"><span class="badge-pill">SPOTLIGHT DROP</span> NIKE SB DUNK LOW x BORN X RAISED "ONE BLOCK AT A TIME"</div>
+      <div class="ticker-item">•</div>
+      <div class="ticker-item">ALL PAIRS PROTECTED BY <span class="text-glow">12-POINT DUAL AUTHENTICATION</span></div>
+      <div class="ticker-item">•</div>
+      <div class="ticker-item"><span class="badge-pill">NEW ARRIVAL</span> NIKE JA 4 "DEEP WATER" SPECIAL EDITION</div>
+      <div class="ticker-item">•</div>
+      <div class="ticker-item">COMPLIMENTARY ARMORED GLOBAL SHIPPING ON ORDERS OVER $300</div>
+      <div class="ticker-item">•</div>
+      <div class="ticker-item">OFFICIAL INSTAGRAM ARCHIVE: <span class="text-glow">@GLOZALUXE</span></div>
+      <div class="ticker-item">•</div>
+      <!-- Repeat for seamless continuous loop -->
+      <div class="ticker-item"><span class="badge-pill">SPOTLIGHT DROP</span> NIKE SB DUNK LOW x BORN X RAISED "ONE BLOCK AT A TIME"</div>
+      <div class="ticker-item">•</div>
+      <div class="ticker-item">ALL PAIRS PROTECTED BY <span class="text-glow">12-POINT DUAL AUTHENTICATION</span></div>
+      <div class="ticker-item">•</div>
+      <div class="ticker-item"><span class="badge-pill">NEW ARRIVAL</span> NIKE JA 4 "DEEP WATER" SPECIAL EDITION</div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION (HEEPZY E-COMMERCE STYLE)
+         ========================================================================== -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Column: Copy & Actions -->
+          <div class="hero-copy-column">
+            <div class="hero-badge-tag">
+              <span>✨</span>
+              <span>DROP 004 // </span>
+              <span class="highlight">AUTHENTICATED DEADSTOCK</span>
+            </div>
+
+            <h1 class="hero-headline">
+              THE NEW ERA OF <br>
+              <span class="color-shift">SNEAKER RESELLING.</span>
+            </h1>
+
+            <p class="hero-subhead">
+              <strong>GLOZA</strong> is the curated luxury destination for verified streetwear grails. 
+              Protected by physical dual-tier laboratory verification and tamper-proof cryptographic smart tags.
+              <em>"Less Noise. More Presence."</em>
+            </p>
+
+            <div class="hero-buttons-row">
+              <a href="#vault" class="btn-primary-dark">
+                <span>EXPLORE THE VAULT</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+              <a href="#studio" class="btn-secondary-light">
+                <span>WATCH 4K DROP REEL</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              </a>
+            </div>
+
+            <div class="hero-trust-bar">
+              <div class="trust-metric-item">
+                <span class="metric-number">100<span>%</span></span>
+                <span class="metric-caption">AUTHENTICITY RATE</span>
+              </div>
+              <div class="trust-metric-item">
+                <span class="metric-number">12<span>PT</span></span>
+                <span class="metric-caption">LAB INSPECTION</span>
+              </div>
+              <div class="trust-metric-item">
+                <span class="metric-number">48<span>HR</span></span>
+                <span class="metric-caption">INSURED DELIVERY</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Clean Floating Sneaker Card (Heepzy Style) -->
+          <div class="hero-product-stage">
+            <div class="hero-main-card">
+              <div class="card-top-meta">
+                <span class="brand-pill">Nike SB x Born x Raised</span>
+                <span class="serial-tag">TAG: GLZ-BXR-7721</span>
+              </div>
+
+              <div class="hero-visual-frame">
+                <img src="assets/born-x-raised-poster.jpg" alt="Nike SB Dunk Low x Born x Raised One Block at a Time">
+
+                <!-- Floating 360 Spin Bubble -->
+                <div class="hero-spin-bubble" onclick="document.getElementById('studio').scrollIntoView({behavior: 'smooth'})" title="Explore 360° Studio View">
+                  <video src="assets/video-spin360.mp4" autoplay loop muted playsinline></video>
+                  <div class="spin-pill-badge">360° SPIN</div>
+                </div>
+              </div>
+
+              <div class="hero-card-details">
+                <h3 class="hero-card-title">Nike SB Dunk Low Born x Raised</h3>
+                <p class="hero-card-subtitle">"One Block at a Time" • Condition: Deadstock Brand New</p>
+
+                <div class="hero-action-row">
+                  <div class="hero-price-wrap">
+                    <span class="price-small-label">MARKET VALUE</span>
+                    <span class="price-large-val">$780 USD</span>
+                  </div>
+                  <button class="btn-inspect-pill" onclick="openQuickView('bxr-dunk')">
+                    INSPECT PAIR
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Live Drop Countdown Bar -->
+            <div class="countdown-banner-clean">
+              <div class="countdown-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>ALLOCATION CLOSING SOON:</span>
+              </div>
+              <div class="timer-digits-clean">
+                <div class="time-box-clean">
+                  <span id="timer-hours" class="time-num-clean">05</span>
+                  <span class="time-unit-clean">HRS</span>
+                </div>
+                <span style="font-weight: 800; color: #94a3b8;">:</span>
+                <div class="time-box-clean">
+                  <span id="timer-mins" class="time-num-clean">42</span>
+                  <span class="time-unit-clean">MIN</span>
+                </div>
+                <span style="font-weight: 800; color: #94a3b8;">:</span>
+                <div class="time-box-clean">
+                  <span id="timer-secs" class="time-num-clean">19</span>
+                  <span class="time-unit-clean">SEC</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CINEMATIC DROP STUDIO (VIDEO & 360 ROTATION)
+         ========================================================================== -->
+    <section id="studio" class="studio-section">
+      <div class="container">
+        <div class="section-header-block">
+          <div class="section-pill-tag">
+            <span class="pill-dot"></span>
+            <span>CINEMATIC DROP STUDIO</span>
+          </div>
+          <h2 class="section-heading-title">IMMERSIVE <span class="highlight">EXPERIENCE</span></h2>
+          <p class="section-description-text">
+            Examine every angle in true motion. High-definition on-feet unboxing footage and full 360-degree studio turntable inspection direct from the GLOZA release vault.
+          </p>
+        </div>
+
+        <div class="studio-grid">
+          <!-- Left: On-Feet Reel Player -->
+          <div class="studio-media-card">
+            <div class="studio-card-header">
+              <div class="studio-header-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg>
+                <span>OFFICIAL DROP REEL // UNBOXING & ON-FEET</span>
+              </div>
+              <span class="badge-hd">4K MASTER</span>
+            </div>
+
+            <div class="reel-video-container">
+              <video id="reel-video" class="reel-video-player" src="assets/video-unboxing.mp4" playsinline loop poster="assets/ja-deep-water-poster.jpg"></video>
+              <button id="reel-play-btn" class="reel-floating-play" aria-label="Play Reel">▶</button>
+              <button id="reel-mute-btn" class="reel-mute-control">UNMUTE AUDIO</button>
+            </div>
+
+            <!-- Chapter Jump Chips -->
+            <div class="reel-chapters-row">
+              <button class="chapter-chip active" data-time="0">00:00 • UNBOXING & PACKAGING</button>
+              <button class="chapter-chip" data-time="6">00:06 • LACING UP</button>
+              <button class="chapter-chip" data-time="12">00:12 • IRIDESCENT SWOOSH</button>
+              <button class="chapter-chip" data-time="18">00:18 • ON-COURT WALK</button>
+            </div>
+          </div>
+
+          <!-- Right: 360 Turntable Studio -->
+          <div class="turntable-card-clean">
+            <div class="studio-card-header">
+              <div class="studio-header-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+                <span>360° STUDIO TURNTABLE ROTATOR</span>
+              </div>
+              <button id="btn-auto-spin" class="btn-inspect-pill" style="padding: 6px 14px; font-size: 0.72rem;">
+                AUTO ROTATE: OFF
+              </button>
+            </div>
+
+            <div class="turntable-stage-clean">
+              <video id="turntable-video" src="assets/video-spin360.mp4" playsinline muted loop></video>
+            </div>
+
+            <div class="turntable-panel-controls">
+              <div class="degree-indicator-row">
+                <span>ROTATION AZIMUTH</span>
+                <span id="degree-val" class="degree-accent">0°</span>
+              </div>
+
+              <!-- Interactive Angle Scrubber -->
+              <input type="range" id="angle-scrubber" class="angle-range-slider" min="0" max="360" value="0" step="2">
+
+              <!-- Quick Angle Presets -->
+              <div class="angle-chips-row">
+                <button class="angle-preset-btn active" data-deg="0">0° PROFILE</button>
+                <button class="angle-preset-btn" data-deg="90">90° HEEL</button>
+                <button class="angle-preset-btn" data-deg="180">180° MEDIAL</button>
+                <button class="angle-preset-btn" data-deg="270">270° TOE BOX</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4-POINT CRAFTSMANSHIP & ANATOMY INSPECTOR
+         ========================================================================== -->
+    <section id="anatomy" class="anatomy-section">
+      <div class="container">
+        <div class="section-header-block">
+          <div class="section-pill-tag">
+            <span class="pill-dot"></span>
+            <span>CRAFTSMANSHIP & DETAILS</span>
+          </div>
+          <h2 class="section-heading-title">PRECISION <span class="highlight">ANATOMY</span></h2>
+          <p class="section-description-text">
+            Click any beacon dot on the shoe to inspect the signature materials, laser embroidery, and prismatic refractions of the Born x Raised SB Dunk.
+          </p>
+        </div>
+
+        <div class="anatomy-viewer-grid">
+          <!-- Left: Sneaker Canvas with Interactive Beacons -->
+          <div class="anatomy-canvas-card">
+            <div class="anatomy-image-wrap">
+              <img src="assets/born-x-raised-poster.jpg" alt="Sneaker Anatomy" class="anatomy-main-shoe-img">
+
+              <!-- Hotspot 1: Holographic Swoosh -->
+              <div class="anatomy-beacon-dot active" data-point="1" style="top: 48%; left: 65%;" title="Holographic Swoosh">
+                <div class="beacon-core"><span></span></div>
+              </div>
+
+              <!-- Hotspot 2: Fat SB Laces -->
+              <div class="anatomy-beacon-dot" data-point="2" style="top: 40%; left: 45%;" title="In Loving Memory Laces">
+                <div class="beacon-core"><span></span></div>
+              </div>
+
+              <!-- Hotspot 3: Heel Midsole -->
+              <div class="anatomy-beacon-dot" data-point="3" style="top: 55%; left: 78%;" title="ON THE TURF Midsole">
+                <div class="beacon-core"><span></span></div>
+              </div>
+
+              <!-- Hotspot 4: Ice Blue Outsole -->
+              <div class="anatomy-beacon-dot" data-point="4" style="top: 57%; left: 35%;" title="Translucent Outsole">
+                <div class="beacon-core"><span></span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Detail Macro Panel -->
+          <div class="anatomy-info-card">
+            <div class="macro-preview-box">
+              <img id="anatomy-macro-img" src="assets/born-x-raised-side.jpg" alt="Macro Feature Detail">
+            </div>
+
+            <h3 id="anatomy-feature-title" class="anatomy-detail-title">
+              Holographic Swoosh & Heel Graphic
+            </h3>
+
+            <p id="anatomy-feature-desc" class="anatomy-detail-desc">
+              Features shifting holographic prism technology on the Nike Swoosh and heel insignia, casting dynamic cyan-to-violet iridescent refractions under light.
+            </p>
+
+            <ul id="anatomy-specs-list" class="specs-table-list">
+              <li class="spec-row-item">
+                <span class="spec-key">Material</span>
+                <span class="spec-val">Iridescent Lens Polymer</span>
+              </li>
+              <li class="spec-row-item">
+                <span class="spec-key">Feature</span>
+                <span class="spec-val">Prismatic Light Refraction</span>
+              </li>
+              <li class="spec-row-item">
+                <span class="spec-key">Condition</span>
+                <span class="spec-val">Factory Flawless (10/10)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         THE VAULT SNEAKER CATALOG (MARKETPLACE)
+         ========================================================================== -->
+    <section id="vault" class="vault-catalog-section">
+      <div class="container">
+        <div class="section-header-block">
+          <div class="section-pill-tag">
+            <span class="pill-dot"></span>
+            <span>AUTHENTICATED CATALOG</span>
+          </div>
+          <h2 class="section-heading-title">EXPLORE THE <span class="highlight">VAULT</span></h2>
+          <p class="section-description-text">
+            Browse verified deadstock pairs currently held in the GLOZA climate facility. Every pair is authenticated, photographed, and dispatched within 48 hours.
+          </p>
+        </div>
+
+        <!-- Filter and Search Action Bar -->
+        <div class="catalog-action-bar">
+          <div class="category-pills-row">
+            <button class="cat-pill-btn active" data-filter="all">ALL GRAILS</button>
+            <button class="cat-pill-btn" data-filter="dunk">NIKE SB</button>
+            <button class="cat-pill-btn" data-filter="performance">PERFORMANCE / JA</button>
+            <button class="cat-pill-btn" data-filter="jordan">AIR JORDAN VAULT</button>
+            <button class="cat-pill-btn" data-filter="collab">COLLABS</button>
+          </div>
+
+          <div class="search-field-wrapper">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" id="catalog-search" class="search-field-input" placeholder="Search silhouette, brand, or model...">
+          </div>
+        </div>
+
+        <!-- Dynamic Product Grid -->
+        <div id="sneaker-grid" class="sneaker-cards-grid">
+          <!-- Populated dynamically via js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         THE MANIFESTO / VAULT WALL SHOWCASE
+         ========================================================================== -->
+    <section id="manifesto" class="manifesto-wall-section">
+      <div class="container">
+        <div class="wall-feature-wrapper">
+          <img src="assets/gloza-vault-wall.jpg" alt="GLOZA Jordan Sneaker Wall" class="wall-image-canvas">
+
+          <div class="wall-overlay-content">
+            <div class="wall-quote-lead-pill">THE GLOZA MANIFESTO</div>
+            
+            <blockquote class="wall-headline-quote">
+              “YOU CAN BUY US OR YOU MAY ACHIEVE ME.<br>
+              WHERE DO YOU FIND TRUE HAPPINESS?<br>
+              FIND THE DIFFERENCE BY GLOZA.”
+            </blockquote>
+
+            <div class="wall-author-signature">— The Curators of GLOZA Luxe Archive</div>
+
+            <div class="wall-pillars-grid">
+              <div class="wall-pillar-box">
+                <div class="pillar-badge-icon">◈</div>
+                <div class="pillar-name-heading">12-POINT AUDIT</div>
+                <div class="pillar-summary-text">Microscopic stitching, blacklight inspection, and box matrix verification.</div>
+              </div>
+              <div class="wall-pillar-box">
+                <div class="pillar-badge-icon">⬡</div>
+                <div class="pillar-name-heading">CLIMATE VAULT</div>
+                <div class="pillar-summary-text">Anti-oxidation storage preserving midsole cushioning and upper materials.</div>
+              </div>
+              <div class="wall-pillar-box">
+                <div class="pillar-badge-icon">◆</div>
+                <div class="pillar-name-heading">SMART NFC TAG</div>
+                <div class="pillar-summary-text">Every pair is tagged with a physical tamper-proof cryptographic token.</div>
+              </div>
+              <div class="wall-pillar-box">
+                <div class="pillar-badge-icon">◇</div>
+                <div class="pillar-name-heading">ARMORED SHIPPING</div>
+                <div class="pillar-summary-text">Double-boxed insured priority courier transit with signature on delivery.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONSIGN & RESELL CALCULATOR SECTION
+         ========================================================================== -->
+    <section id="consign" class="consign-calculator-section">
+      <div class="container">
+        <div class="section-header-block">
+          <div class="section-pill-tag">
+            <span class="pill-dot"></span>
+            <span>SELL & CONSIGN</span>
+          </div>
+          <h2 class="section-heading-title">MONETIZE YOUR <span class="highlight">COLLECTION</span></h2>
+          <p class="section-description-text">
+            Have rare pairs in your rotation? Calculate instant cash buyouts or consign with the industry's lowest commission rate.
+          </p>
+        </div>
+
+        <div class="consign-layout-grid">
+          <!-- Left: Interactive Financial Calculator -->
+          <div class="calculator-main-card">
+            <div class="calc-input-block">
+              <label class="calc-field-label" for="calc-model">
+                <span>SELECT SNEAKER MODEL</span>
+                <span style="color: var(--brand-blue);">BENCHMARK PRICE</span>
+              </label>
+              <select id="calc-model" class="calc-styled-select">
+                <option value="780">Nike SB Dunk Low x Born x Raised ($780 Market)</option>
+                <option value="340">Nike Ja 4 "Deep Water" ($340 Market)</option>
+                <option value="490">Air Jordan 1 Retro High OG "Chicago" ($490 Market)</option>
+                <option value="1250">Travis Scott x Air Jordan 1 Low OG ($1,250 Market)</option>
+                <option value="890">Nike Kobe 6 Protro "Grinch" ($890 Market)</option>
+                <option value="1650">Nike SB Dunk Low "Chunky Dunky" ($1,650 Market)</option>
+              </select>
+            </div>
+
+            <div class="calc-input-block">
+              <label class="calc-field-label">
+                <span>CONDITION RATING</span>
+                <span style="color: var(--accent-green);">AUTHENTICATED GRADE</span>
+              </label>
+              <div class="condition-pill-grid">
+                <button class="cond-choice-btn active" data-mult="1.0">DEADSTOCK (10/10)</button>
+                <button class="cond-choice-btn" data-mult="0.92">NEAR MINT (9.5/10)</button>
+                <button class="cond-choice-btn" data-mult="0.85">LIGHTLY TRIED (9.0/10)</button>
+              </div>
+            </div>
+
+            <div class="payout-comparison-box">
+              <div class="payout-estimate-col">
+                <span class="payout-col-title">INSTANT CASH BUYOUT</span>
+                <span id="instant-payout-val" class="payout-number-val">$671</span>
+                <span class="payout-foot-note">Direct wire upon arrival</span>
+              </div>
+              <div class="payout-estimate-col">
+                <span class="payout-col-title">CONSIGNMENT RETURN</span>
+                <span id="consign-payout-val" class="payout-number-val consign">$733</span>
+                <span class="payout-foot-note">94% paid upon buyer sale</span>
+              </div>
+            </div>
+
+            <button id="btn-submit-consign" class="btn-primary-dark" style="width: 100%; justify-content: center;">
+              <span>REQUEST PREPAID SHIPPING KIT</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+
+          <!-- Right: Process Steps -->
+          <div class="consign-steps-column">
+            <div class="consign-step-card">
+              <div class="step-num-pill">01</div>
+              <div class="step-details">
+                <h4>Insured Shipping Kit Sent</h4>
+                <p>We provide complimentary reinforced packaging and fully-insured shipping labels to courier your pair to our regional vault.</p>
+              </div>
+            </div>
+
+            <div class="consign-step-card">
+              <div class="step-num-pill">02</div>
+              <div class="step-details">
+                <h4>Physical & AI Laboratory Authentication</h4>
+                <p>Pairs pass our comprehensive 12-point authentication test within 4 hours, receiving a cryptographic NFC smart tag.</p>
+              </div>
+            </div>
+
+            <div class="consign-step-card">
+              <div class="step-num-pill">03</div>
+              <div class="step-details">
+                <h4>Same-Day Instant Payout</h4>
+                <p>Choose instant Wire Transfer, Direct Deposit, PayPal, or Crypto settlement (USDT / USDC) with zero hidden deductions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         AUTHENTICITY VERIFICATION SCANNER SIMULATOR
+         ========================================================================== -->
+    <section id="verifier" class="nfc-verifier-section">
+      <div class="container">
+        <div class="section-header-block">
+          <div class="section-pill-tag">
+            <span class="pill-dot"></span>
+            <span>NFC AUTHENTICATION VERIFIER</span>
+          </div>
+          <h2 class="section-heading-title">CHECK DIGITAL <span class="highlight">PROVENANCE</span></h2>
+          <p class="section-description-text">
+            Test any GLOZA tamper-proof smart tag. Enter a physical serial code below to simulate the cryptographic verification with our vault node.
+          </p>
+        </div>
+
+        <div class="nfc-scanner-card">
+          <div class="scanner-left-inputs">
+            <label style="font-size: 0.82rem; font-weight: 700; color: var(--text-secondary); text-transform: uppercase;">
+              ENTER PHYSICAL SMART TAG SERIAL:
+            </label>
+            <div class="scanner-input-container">
+              <input type="text" id="scanner-tag-input" class="nfc-text-input" value="GLZ-BXR-7721" placeholder="e.g. GLZ-BXR-7721">
+              <button id="btn-run-scan" class="btn-primary-dark" style="padding: 12px 28px;">
+                <span>VERIFY</span>
+              </button>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">
+              Every physical GLOZA smart tag embeds an encrypted NTAG 424 DNA microchip that generates a unique cryptographic challenge upon contact.
+            </p>
+          </div>
+
+          <div class="scanner-display-card">
+            <div id="scanner-laser" class="scanner-laser-bar"></div>
+            <div id="scanner-display-content" style="text-align: center;">
+              <div class="verified-stamp-clean">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                100% VAULT AUTHENTICATED
+              </div>
+              <p style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text-primary); font-weight: 800;">
+                Nike SB Dunk Low x Born x Raised
+              </p>
+              <div class="cert-meta-grid">
+                <div><span class="spec-key">TAG SERIAL:</span> <span class="spec-val">GLZ-BXR-7721</span></div>
+                <div><span class="spec-key">INSPECTOR:</span> <span class="spec-val">GLZ-AUTH #09 (PASSED)</span></div>
+                <div><span class="spec-key">VERIFIED DATE:</span> <span class="spec-val">NOVEMBER 2026</span></div>
+                <div><span class="spec-key">LEDGER PROOF:</span> <span class="spec-val">0x89f2b...c38e</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       CART SLIDEOVER DRAWER
+       ========================================================================== -->
+  <div id="cart-overlay" class="cart-drawer-overlay">
+    <div class="cart-drawer">
+      <div class="cart-header-row">
+        <h3 class="cart-heading-title">YOUR SHOPPING BAG</h3>
+        <button id="cart-close-btn" class="cart-close-cross" aria-label="Close Bag">✕</button>
+      </div>
+
+      <div id="cart-items-list" class="cart-items-body">
+        <!-- Injected dynamically via js/app.js -->
+      </div>
+
+      <div class="cart-checkout-footer">
+        <div class="coupon-row-clean">
+          <input type="text" id="coupon-input" class="coupon-input-clean" placeholder="PROMO CODE (e.g. GLOZA10)">
+          <button id="btn-apply-coupon" class="btn-apply-coupon-clean">APPLY</button>
+        </div>
+
+        <div class="subtotal-summary-row">
+          <span>ESTIMATED TOTAL</span>
+          <span id="cart-subtotal" class="subtotal-amount-val">$780</span>
+        </div>
+
+        <button id="btn-checkout" class="btn-primary-dark" style="width: 100%; justify-content: center;">
+          <span>PROCEED TO CHECKOUT</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       QUICK VIEW & MULTI-ANGLE MODAL
+       ========================================================================== -->
+  <div id="quickview-modal" class="modal-overlay">
+    <div class="quickview-card-container">
+      <button id="modal-close-btn" class="modal-close-round" aria-label="Close Preview">✕</button>
+
+      <div class="modal-gallery-col">
+        <div class="modal-big-img-box">
+          <img id="qv-main-img" src="assets/born-x-raised-poster.jpg" alt="Shoe Detail Angle">
+        </div>
+        <div id="qv-thumbs-row" class="modal-thumbs-carousel">
+          <!-- Dynamically populated thumbnails -->
+        </div>
+      </div>
+
+      <div class="modal-details-col">
+        <div id="qv-brand" class="modal-brand-label">NIKE SB</div>
+        <h2 id="qv-title" class="modal-shoe-headline">Nike SB Dunk Low x Born x Raised</h2>
+        <div id="qv-price" class="modal-price-tag">$780 USD</div>
+        <p id="qv-desc" class="modal-desc-text">
+          The official grail collaborative Dunk Low honoring Los Angeles street culture. Includes iridescent holographic swoosh, "In Loving Memory" fat laces, and "ON THE TURF" embossed midsole.
+        </p>
+
+        <div style="margin-bottom: 24px;">
+          <label style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin-bottom: 8px; display: block;">
+            CHOOSE VERIFIED SIZE:
+          </label>
+          <div id="qv-sizes-row" class="card-size-chips-row">
+            <!-- Dynamically populated sizes -->
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 12px; margin-top: auto;">
+          <button class="btn-primary-dark" style="flex: 1; justify-content: center;" onclick="addFromQuickView()">
+            <span>ADD TO BAG</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       ORDER SUCCESS MODAL
+       ========================================================================== -->
+  <div id="order-success-modal" class="modal-overlay">
+    <div class="order-success-clean-card">
+      <div class="success-check-badge">✓</div>
+      <h3 style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: var(--text-primary); margin-bottom: 12px;">
+        ORDER CONFIRMED
+      </h3>
+      <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 24px;">
+        Your order has been registered in the GLOZA vault system. Tamper-proof smart tags have been sealed and an encrypted tracking token has been transmitted to your email.
+      </p>
+      <div style="background: var(--bg-main); border: 1px solid var(--border-light); padding: 12px; border-radius: var(--radius-sm); font-size: 0.85rem; font-weight: 700; color: var(--brand-blue); margin-bottom: 24px;">
+        TRACKING ID: GLZ-TRK-98440-EXP
+      </div>
+      <button class="btn-primary-dark" style="width: 100%; justify-content: center;" onclick="closeOrderCelebration()">
+        <span>CONTINUE BROWSING</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODERN FOOTER
+       ========================================================================== -->
+  <footer class="gloza-modern-footer">
+    <div class="container">
+      <div class="footer-content-grid">
+        <div>
+          <a href="#" class="nav-brand" style="margin-bottom: 16px;">
+            <div class="brand-badge">
+              <img src="assets/gloza-logo.jpg" alt="GLOZA">
+            </div>
+            <span class="brand-title">GLOZA</span>
+          </a>
+          <p class="footer-bio">
+            Next-generation authenticated luxury and rare streetwear footwear reselling network. 
+            Cryptographic NFC provenance, climate vault storage, and instant global consignment.
+          </p>
+          <div style="margin-top: 20px; font-size: 0.85rem; font-weight: 700; color: var(--text-primary);">
+            INSTAGRAM: <a href="https://instagram.com/glozaluxe" target="_blank" rel="noopener noreferrer" style="color: var(--brand-blue); text-decoration: none;">@glozaluxe</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-section-title">The Vault</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#vault" class="footer-nav-link">Featured Grails</a></li>
+            <li><a href="#studio" class="footer-nav-link">360° Studio</a></li>
+            <li><a href="#anatomy" class="footer-nav-link">Shoe Craftsmanship</a></li>
+            <li><a href="#vault" class="footer-nav-link">Nike SB Dunks</a></li>
+            <li><a href="#vault" class="footer-nav-link">Air Jordan Archive</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-section-title">Services</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#consign" class="footer-nav-link">Consign With Gloza</a></li>
+            <li><a href="#consign" class="footer-nav-link">Instant Cash Buyout</a></li>
+            <li><a href="#verifier" class="footer-nav-link">NFC Tag Verification</a></li>
+            <li><a href="#manifesto" class="footer-nav-link">Authenticity Guarantee</a></li>
+            <li><a href="#manifesto" class="footer-nav-link">Climate Storage</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-section-title">VIP Release Access</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 14px;">
+            Enter your email to receive direct notifications before public drop allocations close.
+          </p>
+          <form style="display: flex; gap: 8px;" onsubmit="event.preventDefault(); alert('Priority VIP access granted!');">
+            <input type="email" required placeholder="collector@domain.com" class="footer-input-clean">
+            <button type="submit" class="btn-primary-dark" style="padding: 10px 20px; font-size: 0.82rem;">JOIN</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-legal-bar">
+        <div>© 2026 GLOZA LUXE INC. ALL RIGHTS RESERVED.</div>
+        <div style="display: flex; gap: 24px;">
+          <span>TERMS OF SERVICE</span>
+          <span>AUTHENTICATION STANDARDS</span>
+          <span>PRIVACY</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/audio.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
